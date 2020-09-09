@@ -27,11 +27,11 @@
         <div class="container">
             <div class="row">
                 <!-- logo -->
-                <div class="col-1">
+                <div class="col-12 col-sm-2 col-lg-1">
                     <img src="asset/images/logo.png" alt="logo" width="100" height="70">
                 </div>
                 <!-- search bar -->
-                <div class="col-7 mt-3">
+                <div class="col-12 col-sm-6 col-lg-7 mt-3">
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2 w-75 btn btn-outline-success" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
@@ -39,7 +39,7 @@
                     
                 </div>
                 <!-- account -->
-                <div class="col-4 mt-3">
+                <div class="col-12 col-sm-4 col-lg-4 mt-3">
                     <div class="container">
                         <div class="row">
                             <!-- user icon -->
@@ -62,7 +62,7 @@
         </div> 
         
         
-        
+        <!-- nav bar -->
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -78,20 +78,30 @@
                                 
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-bars"></i>
+                                        <i class="fas fa-bars d-none d-md-none d-sm-inline"></i>
                                         Semua kategori
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Bakso</a>
-                                        <a class="dropdown-item" href="#">Ayam bakar</a>
+                                        <a class="dropdown-item" href="#pizza">Pizza</a>
+                                        <a class="dropdown-item" href="#tumpeng">Tumpeng</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Martabak manis</a>
+                                        <a class="dropdown-item" href="#seafood">Seafood</a>
                                     </div>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            taik
+                                        <a class="nav-link" href="#populer">
+                                            Produk terpopuler
                                         </a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#standar">
+                                            Produk standar
+                                        </a>
+                                    </li> 
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#rekomendasi">
+                                            Rekomendasi
+                                        </a>
+                                    </li>  
                                 </li>
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -120,20 +130,20 @@
                 <div class="container">
                     <div>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-12">
                                 <i class="fas fa-medal fa-3x" style="color: slategrey"></i>
-                                <h3 class="h5 mt-4">Di jamin wenak!!!</h3>
-                                <p>Di kami ada berbagai makanan yang sangat enak.</p>
+                                <h3 class="h5 mt-4">Makanan dijamin enak</h3>
+                                <p>Di toko kami terdapat makanan-makanan yang insyaallah memuaskan.</p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12">
                                 <i class="fas fa-landmark fa-3x" style="color: slategrey"></i>
                                 <h3 class="h5 mt-4">Pengiriman</h3>
-                                <p>Pemgiriman tergantung amal ibadah</p>
+                                <p>Pengiriman kami dapat di kira-kira 15-25 menit.</p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12">
                                 <i class="fas fa-lock fa-3x" style="color: slategrey"></i>
                                 <h3 class="h5 mt-4">Pasti halal</h3>
-                                <p>makanan pati halal</p>
+                                <p>Kami hanya menjual makanan-makanan yang halal(tidak menjual makanan yang haram</p>
                             </div>
                         </div>
                     </div>
@@ -146,8 +156,8 @@
     
     <section class="container mt-3">
         <h3>Produk terpopuler</h3>
-        <div class="row">
-            <div class="col-4">
+        <div class="row" id="populer">
+            <div class="col-12 col-sm-12 col-lg-4" id="tumpeng">
                 <div class="card">
                     <a href="#"><img src="asset/images/tumpeng.jpg" alt="tumpeng" class="img-fluid"></a>
                     <div class="card-body">
@@ -171,7 +181,7 @@
                 </div>
             </div>
             
-            <div class="col-4">
+            <div class="col-12 col-sm-12 col-lg-4" id="pizza">
                 <div class="card">
                     <a href="#"><img src="asset/images/pizza.JPG" alt="Pizza" class="img-fluid"></a>
                     <div class="card-body">
@@ -195,7 +205,7 @@
                 </div>
             </div>
             
-            <div class="col-4">
+            <div class="col-12 col-sm-12 col-lg-4" id="seafood">
                 <div class="card">
                     <a href="#"><img src="asset/images/seafood.jpg" alt="seafood" class="img-fluid"></a>
                     <div class="card-body">
@@ -225,8 +235,8 @@
     
     <section class="container mt-3">
         <h3>Produk standar</h3>
-        <div class="row">
-            <div class="col-4">
+        <div class="row" id="standar">
+            <div class="col-12 col-sm-12 col-lg-4">
                 <div class="card">
                     <a href="#"><img src="asset/images/sate.jpg" alt="sate" class="img-fluid"></a>
                     <div class="card-body">
@@ -250,7 +260,7 @@
                 </div>
             </div>
             
-            <div class="col-4">
+            <div class="col-12 col-sm-12 col-lg-4">
                 <div class="card">
                     <a href="#"><img src="asset/images/teh.jpg" alt="teh" class="img-fluid"></a>
                     <div class="card-body">
@@ -274,7 +284,7 @@
                 </div>
             </div>
             
-            <div class="col-4">
+            <div class="col-12 col-sm-12 col-lg-4">
                 <div class="card">
                     <a href="#"><img src="asset/images/air putih.jpg" alt="air putih" class="img-fluid"></a>
                     <div class="card-body">
@@ -303,8 +313,8 @@
     <!-- recommended -->
     <section class="container mt-3">
         <h3>Rekomendasi</h3>
-        <div class="row">
-            <div class="col-4">
+        <div class="row" id="rekomendasi">
+            <div class="col-12 col-sm-12 col-lg-4">
                 <div class="card">
                     <a href="#"><img src="asset/images/tumpeng.jpg" alt="tumpeng" class="img-fluid"></a>
                     <div class="card-body">
@@ -328,7 +338,7 @@
                 </div>
             </div>
             
-            <div class="col-4">
+            <div class="col-12 col-sm-12 col-lg-4">
                 <div class="card">
                     <a href="#"><img src="asset/images/pizza.JPG" alt="Pizza" class="img-fluid"></a>
                     <div class="card-body">
@@ -352,7 +362,7 @@
                 </div>
             </div>
             
-            <div class="col-4">
+            <div class="col-12 col-sm-12 col-lg-4">
                 <div class="card">
                     <a href="#"><img src="asset/images/seafood.jpg" alt="seafood" class="img-fluid"></a>
                     <div class="card-body">
@@ -382,34 +392,34 @@
     <section class="container">
         <h3>MITRA KAMI</h3>
         <div class="row">
-            <div class="col-2 mt-0">
+            <div class="col-4 col-sm-6 col-lg-4">
                 <figure class="figure">
                     <img src="asset/images/singa.jpg" class="figure-img img-fluid rounded" alt="singa">
                     <figcaption class="figure-caption text-center">TIGER</figcaption>
                 </figure>
             </div>
-            <div class="col-2 mt-0">
+            <div class="col-4 col-sm-6 col-lg-4">
                 
                 <figure class="figure">
                     <img src="asset/images/creative.jpg" class="figure-img img-fluid rounded" alt="creative">
                     <figcaption class="figure-caption text-center">CREATIVE</figcaption>
                 </figure>
             </div>
-            <div class="col-2 mt-0">
+            <!-- <div class="col-4 col-sm-6 col-lg-4">
                 
                 <figure class="figure">
                     <img src="asset/images/total.jpg" class="figure-img img-fluid rounded" alt="total">
                     <figcaption class="figure-caption text-center">TOTAL</figcaption>
                 </figure>
-            </div>
-            <div class="col-2 mt-0">
+            </div> -->
+            <div class="col-4 col-sm-6 col-lg-4">
                 
                 <figure class="figure">
                     <img src="asset/images/germas.png" class="figure-img img-fluid rounded" alt="germas">
                     <figcaption class="figure-caption text-center">GERAKAN MASYARAKAT SEHAT</figcaption>
                 </figure>
             </div>
-            <div class="col-2 mt-0">
+            <div class="col-4 col-sm-6 col-lg-4">
                 
                 <figure class="figure">
                     <img src="asset/images/mastercard.jpg" class="figure-img img-fluid rounded" alt="mastercard">
@@ -429,45 +439,45 @@
     <!-- app section -->
     
     <section class="container">
-        <h3>DOWNLOAD DI</h3>
+        <h5>DOWNLOAD DI</h5>
         <div class="row">
-            <div class="col-2 mt-0">
+            <div class="col-4 col-sm-4 col-lg-2">
                 <figure class="figure">
                     <img src="asset/images/jos.jpg" class="figure-img img-fluid rounded" height="150" alt="jos">
-                    <figcaption class="figure-caption text-center">TIGER</figcaption>
+                    <figcaption class="figure-caption text-center"></figcaption>
                 </figure>
             </div>
         </div>
     </section>
     
     <!-- footer section -->
-    <section class="container">
-        <div class="row">
-            <div class="col-3">
+    <section class="container"> 
+        <div class="row btn-secondary">
+            <div class="col-6 col-sm-3 col-lg-3">
                 <h5>perusahaan</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#">tentang kami</a></li>
-                    <li><a href="#">karir</a></li>
-                    <li><a href="#">syarat &amp; ketentuan</a></li>
+                    <li><a href="#"><span style="color: white">tentang kami</span></a></li>
+                    <li><a href="#"><span style="color: white">karir</span></a></li>
+                    <li><a href="#"><span style="color: white">syarat &amp; ketentuan</span></a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-3 col-lg-3">
                 <h5>bantuan</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#">kontak</a></li>
-                    <li><a href="#">klaim asuransi</a></li>
-                    <li><a href="#">info credit</a></li>
+                    <li><a href="#"><span style="color: white">kontak</span></a></li>
+                    <li><a href="#"><span style="color: white">klaim asuransi</span></a></li>
+                    <li><a href="#"><span style="color: white">info credit</span></a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-3 col-lg-3">
                 <h5>akun</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#">akun pengguna</a></li>
-                    <li><a href="#">daftar</a></li>
-                    <li><a href="#">pengaturan akun</a></li>
+                    <li><a href="#"><span style="color: white">akun pengguna</span></a></li>
+                    <li><a href="#"><span style="color: white">daftar</span></a></li>
+                    <li><a href="#"><span style="color: white">pengaturan akun</span></a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-3 col-lg-3">
                 <h5>sosial media</h5>
                 <ul class="list-unstyled">
                     <li><i class="fab fa-facebook-f"></i>facebook</li>
@@ -481,20 +491,20 @@
 </div>
 </div>
 </section>
-
+<!-- ngisoran -->
 <section class="container mt-3">
-    <div class="row">
-        <div class="col-3">
-            <p>&copy; 2020 toko makanan</p>
+    <div class="row btn-success">
+        <div class="col-12 text-center">
+            <p>&copy; 2020 toko makanan, info@tokomakanan.com, +628980249767, green lake city m59,cipondoh,tangerang</p>
         </div>
         
-        <div class="col-7">
+        <!-- <div class="col-12">
             <ul class="list-inline">
                 <li class="list-inline-item">info@tokomakanan.com</li>
                 <li class="list-inline-item">+628980249767</li>
                 <li class="list-inline-item">green lake city m59,cipondoh,tangerang</li>
             </ul>
-        </div>
+        </div> -->
     </div>
 </div>
 </section>
